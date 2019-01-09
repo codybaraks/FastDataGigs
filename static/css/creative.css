@@ -114,7 +114,7 @@ img::-moz-selection {
   font-size: .9rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #212529;
+  color: #FFFFFF;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
@@ -178,7 +178,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
+  /*background-image: url("../img/analytics.jpg");*/
   background-position: center center;
   background-size: cover;
 }

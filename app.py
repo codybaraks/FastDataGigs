@@ -12,6 +12,11 @@ def home():
     return render_template('index.html')
 
 
+@app.route('/house')
+def house():
+    return render_template('index.html')
+
+
 @app.route('/data', methods=['POST', 'GET'])
 def data():
     form = ContactForm()
