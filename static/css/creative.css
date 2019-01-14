@@ -127,7 +127,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand,dropdown-toggle:hover {
-  color: #f05f40;
+  color: red;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,dropdown,
