@@ -42,7 +42,28 @@ h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
-
+.fa-facebook
+{
+  /*background-image: url("../img/facebook.png");*/
+  height: 10px;
+  width: 10px;
+}
+.social
+{
+  padding-left: 40%;
+  padding-top: 10px;
+  text-space: 20;
+    -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.social a:hover
+{
+  color: #0056b3;
+    cursor: pointer;
+  text-decoration: none;
+}
 .bg-primary {
   background-color: #F05F40 !important;
 }
