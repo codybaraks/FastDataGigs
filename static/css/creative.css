@@ -45,11 +45,11 @@ h6 {
 .fa-facebook
 {
   /*background-image: url("../img/facebook.png");*/
-  height: 10px;
-  width: 10px;
+padding-left: 20px;
 }
 .social
 {
+
   padding-left: 40%;
   padding-top: 10px;
   text-space: 20;
@@ -60,7 +60,7 @@ h6 {
 }
 .social a:hover
 {
-  color: #0056b3;
+  color: red;
     cursor: pointer;
   text-decoration: none;
 }
@@ -203,7 +203,10 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
-
+.background
+{
+  background-image: url("../img/wood.jpg");
+}
 header.masthead hr {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -338,3 +341,42 @@ header.masthead p {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
+.blink_tab
+ {
+	-webkit-animation: blink 1.75s linear infinite;
+	-moz-animation: blink 1.75s linear infinite;
+	-ms-animation: blink 1.75s linear infinite;
+	-o-animation: blink 1.75s linear infinite;
+	 animation: blink 1.75s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
