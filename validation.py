@@ -10,3 +10,13 @@ class ContactForm(FlaskForm):
     # organization = StringField('organization', validators=[DataRequired(), Length(min=2, message="Organization is too short")])
     title = StringField('title', validators=[DataRequired(), Length(min=2, message="Your Title is too short")])
     description = StringField('description', validators=[DataRequired(), Length(min=2, message="Description is too short")])
+
+
+class UserForm(FlaskForm):
+    name = StringField('Name', validators=[DataRequired(), Length(min=2, message="Your name is too short")])
+    email = StringField('Email', validators=[DataRequired(), Email(message="Invalid Email")])
+
+    title = StringField('title', validators=[DataRequired(), Length(min=2, message="Your Title is too short")])
+    description = StringField('description', validators=[DataRequired(), Length(min=2, message="Description is too short")])
+
+

@@ -40,5 +40,26 @@ def data():
     return render_template('formA.html', form=form)
 
 
+@app.route('/userdata', methods=['POST', 'GET'])
+def userdata():
+    form = UserForm()
+    if form.validate_on_submit():
+        if request.method == 'POST':
+            name = request.form["name"]
+            email = request.form["email"]
+            gender = request.form["gender"]
+            title = request.form["title"]
+            description = request.form["description"]
+
+            print(name, email, gender, title, description)
+            cursor = db.cursor()
+            sql = "INSERT INTO `userdata`(`name`, `email`, `gender`, `title`, `description`)  VALUES (%s,%s,%s,%s,%s)"
+            val = (name, email, gender, title, description)
+            cursor.execute(sql, val)
+            db.commit()
+            flash("saved in database")
+    return render_template('Customer_info.html', form=form)
+
+
 if __name__ == '__main__':
     app.run()
