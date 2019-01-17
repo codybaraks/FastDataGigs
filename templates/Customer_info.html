@@ -19,12 +19,20 @@
 
     <!-- Custom styles for this template -->
     <link href="../static/css/creative.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/js/floating-wpp.min.css">
     {#    for form #}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+{#    for whatsapp #}
+    <!--CSS-->
+
+
+<!--JS-->
+
+{#    end whatsapp#}
 </head>
 <body id="page-top" class="background">
 
@@ -191,7 +199,7 @@
     </div>
 
 </div>
-
+<div class="floating-wpp"></div>
 <!-- Bootstrap core JavaScript -->
 <script src="../static/vendor/jquery/jquery.min.js"></script>
 <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -200,8 +208,27 @@
 <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="../static/vendor/scrollreveal/scrollreveal.min.js"></script>
 <script src="../static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="/static/js/floating-wpp.min.js"></script>
 
 <!-- Custom scripts for this template -->
 <script src="../static/js/creative.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $('.floating-wpp').floatingWhatsApp({
+            phone: '+254725870880',
+            popupMessage: 'Welcome to fastdatagigs',
+            showPopup: true,
+            position: 'right', // left or right
+            autoOpen: false, // true or false
+            //autoOpenTimer: 4000,
+            message: 'Hello how are you my name is earvin',
+            //headerColor: 'orange', // enable to change msg box color
+            headerTitle: 'Whatsapp Message Box',
+        });
+    });
+
+</script>
 </body>
 </html>
