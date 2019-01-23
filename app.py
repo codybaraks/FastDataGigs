@@ -2,7 +2,7 @@ from flask import Flask, render_template, redirect, request, sessions, url_for, 
 import mysql.connector as connector
 from validation import *
 
-db = connector.connect(host="localhost", user="root", passwd="root", database="waweru")
+db = connector.connect(host="localhost", user="root", passwd="Guest131", database="waweru")
 app = Flask(__name__, template_folder='templates')
 app.secret_key = "fsggrsgsrgrg"
 
@@ -53,7 +53,7 @@ def userdata():
 
             print(name, email, gender, title, description)
             cursor = db.cursor()
-            sql = "INSERT INTO `userdata`(`name`, `email`, `gender`, `title`, `description`)  VALUES (%s,%s,%s,%s,%s)"
+            sql = "INSERT INTO `contact`(`name`, `email`, `gender`, `title`, `description`)  VALUES (%s,%s,%s,%s,%s)"
             val = (name, email, gender, title, description)
             cursor.execute(sql, val)
             db.commit()
