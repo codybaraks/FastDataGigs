@@ -47,14 +47,13 @@ def userdata():
         if request.method == 'POST':
             name = request.form["name"]
             email = request.form["email"]
-            gender = request.form["gender"]
             title = request.form["title"]
             description = request.form["description"]
 
             print(name, email, gender, title, description)
             cursor = db.cursor()
-            sql = "INSERT INTO `contact`(`name`, `email`, `gender`, `title`, `description`)  VALUES (%s,%s,%s,%s,%s)"
-            val = (name, email, gender, title, description)
+            sql = "INSERT INTO `contact`(`name`, `email`,`title`, `description`)  VALUES (%s,%s,%s,%s)"
+            val = (name, email, title, description)
             cursor.execute(sql, val)
             db.commit()
             flash("saved in database")
